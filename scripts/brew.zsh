@@ -22,6 +22,7 @@ apps=(
     wget
 )
 
+# Upgrade & Install
 brew update 
 brew upgrade
 brew install "${apps[@]}"

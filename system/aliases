@@ -1,0 +1,25 @@
+# System & Navigation
+alias ls="ls -F --color"
+alias l="ls -lAh --color"
+alias ll="ls -l --color"
+alias la="ls -A --color"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias dl="cd ~/Downloads"
+alias dk="cd ~/Desktop"
+alias dc="cd ~/Documents"
+
+# Helpers & Utils
+alias grep="grep --color=auto "
+alias sudo="sudo "
+alias week="date +%V"
+alias timer="echo "Timer started. Stop with Ctrl-D." && date && time cat && date"
+alias cwd="pwd | tr -d "\r\n" | pbcopy"
+
+# Network
+alias pubip="dig +short myip.opendns.com @resolver1.opendns.com"
+
+
+
