@@ -3,6 +3,8 @@
 
 echo "Setting OS defaults.."
 
+killall "System Preferences"
+
 # Admin access
 sudo -v
 
@@ -162,6 +164,9 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 # Allow installing user scripts via GitHub or Userscripts.org
 defaults write com.google.Chrome ExtensionInstallSources -array "https://*.github.com/*" "http://userscripts.org/*"
 defaults write com.google.Chrome.canary ExtensionInstallSources -array "https://*.github.com/*" "http://userscripts.org/*"
+
+# Disable the macOS Crash reporter (Crash dialog that normally appears after an application halts.)
+defaults write com.apple.CrashReporter DialogType none
 
 echo "Done"
 
