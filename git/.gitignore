@@ -10,7 +10,6 @@
 # Icon must end with two \r
 Icon
 
-
 # Thumbnails
 ._*
 
@@ -52,7 +51,6 @@ cscope.out
 cscope.in.out
 cscope.po.out
 
-
 ### Vim ###
 # Swap
 [._]*.s[a-v][a-z]
@@ -74,3 +72,16 @@ Sessionx.vim
 [._]*.un~
 
 # End of https://www.toptal.com/developers/gitignore/api/vim,tags,macos
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix

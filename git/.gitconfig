@@ -1,0 +1,55 @@
+[user]
+	name = Lennart Krebs
+	email = 114749314+lennartkrebs@users.noreply.github.com
+
+[core]
+	excludesfile = ~/.gitignore
+	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+	trustctime = false
+	autocrlf = input
+	pager = delta
+	editor = vim 
+
+[init]
+	defaultBranch = main
+
+[apply]
+	whitespace = fix
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold # line info
+	old = red # deletions
+	new = green # additions
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+[diff]
+	renames = copies
+	colorMoved = default
+
+[help]
+	autocorrect = 1
+
+[merge]
+	log = true
+	conflictstyle = diff3
+
+[push]
+	default = simple
+
+[commit]
+	gpgsign = true
+
+[pull]
+	rebase = true
+
+
