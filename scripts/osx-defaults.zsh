@@ -4,6 +4,7 @@
 echo "Setting OS defaults.."
 
 killall "System Preferences"
+killall "Finder"
 
 # Admin access
 sudo -v
