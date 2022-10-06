@@ -1,4 +1,5 @@
 # System & Navigation
+alias sudo="sudo "
 alias ls="ls -F --color"
 alias l="ls -lAh --color"
 alias ll="ls -l --color"
@@ -10,16 +11,44 @@ alias .....="cd ../../../.."
 alias dl="cd ~/Downloads"
 alias dk="cd ~/Desktop"
 alias dc="cd ~/Documents"
+alias cp="cp -i"
+alias mv="mv -i"
+alias rr="rm -rf"
+alias untar="tar xvf"
+alias pubkey="more ~/.ssh/id_ed25519.pub | pbcopy | echo 'Copied public key to clipboard.'"
+alias prikey="more ~/.ssh/id_ed25519 | pbcopy | echo 'Copied private key to clipboard.'"
+alias emptytrash="sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
-# Helpers & Utils
+# Misc
 alias grep="grep --color=auto "
-alias sudo="sudo "
 alias week="date +%V"
-alias timer="echo "Timer started. Stop with Ctrl-D." && date && time cat && date"
+alias timer="echo 'Timer started. Stop with Ctrl-D.' && date && time cat && date"
 alias cwd="pwd | tr -d "\r\n" | pbcopy"
+alias mergepdf="/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py" # Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
+alias zip="zip -x *.DS_Store -x *__MACOSX* -x *.AppleDouble*"
+alias dkshow="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+alias dkhide="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias listaliases="alias | sed 's/=.*//'"
+alias listfunctions="declare -f | grep '^[a-z].* ()' | sed 's/{$//'"
+alias cleanupds="find . -type f -name '*.DS_Store' -ls -exec /bin/rm {} \;"
+alias cleanupad="find . -type d -name '.AppleD*' -ls -exec /bin/rm -r {} \;"
+alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip"
 
 # Network
-alias pubip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ipl="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
+
+# Applications
+alias chrome="open -a 'Google Chrome'"
+alias safari="open -a 'Safari'"
+alias spotify="open -a 'Spotify'"
+alias pref="open -a 'System Preferences'"
+
+# tree 
+alias tree="tree -A"
+alias treed="tree -d"
+alias tree1="tree -d -L 1"
+alias tree2="tree -d -L 2"
 
 
 
