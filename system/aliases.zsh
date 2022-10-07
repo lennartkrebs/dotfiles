@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # System & Navigation
 alias sudo="sudo "
 alias ls="ls -F --color"
@@ -37,6 +39,7 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 # Network
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ipl="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
+alias wifi="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I"
 
 # Applications
 alias chrome="open -a 'Google Chrome'"

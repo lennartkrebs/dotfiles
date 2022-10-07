@@ -20,6 +20,17 @@ apps=(
     cmake
     ffmpeg
     wget
+
+    # C++
+    boost
+    eigen
+    xtensor
+    gcc
+
+    # Apps
+    google-chrome
+    spotify
+    visual-studio-code
 )
 
 # Upgrade & Install
