@@ -3,7 +3,7 @@
 	email = 114749314+lennartkrebs@users.noreply.github.com
 
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore_glob
 	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
 	trustctime = false
 	autocrlf = input

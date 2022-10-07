@@ -1,4 +1,5 @@
 #!/bin/zsh
+export FPATH="/opt/homebrew/share/zsh/site-functions:$FPATH"
 
 export EDITOR="vim"
 export LANG="en_US.UTF-8"

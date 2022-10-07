@@ -20,6 +20,8 @@ apps=(
     cmake
     ffmpeg
     wget
+    rust
+    oh-my-posh
 
     # C++
     boost
@@ -31,8 +33,12 @@ apps=(
     google-chrome
     spotify
     visual-studio-code
+    iterm2
+    teamviewer
 )
 
+
+echo "Installing apps .."
 # Upgrade & Install
 brew update 
 brew upgrade
