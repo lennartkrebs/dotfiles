@@ -170,11 +170,3 @@ defaults write com.google.Chrome.canary ExtensionInstallSources -array "https://
 defaults write com.apple.CrashReporter DialogType none
 
 echo "Done"
-
-
-
-
-
-
-
-
