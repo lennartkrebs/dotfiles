@@ -17,9 +17,6 @@ compinit
 THEME_NAME="kali"
 eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/$THEME_NAME.omp.json)"
 
-# Install directory
-export DOTFILES="$HOME/.dotfiles"
-
 # Source scripts
-source $DOTFILES/system/aliases.zsh
-source $DOTFILES/system/exports.zsh 
+source .aliases
+source .exports

@@ -1,0 +1,26 @@
+brew "coreutils"
+brew "tree"
+brew "git"
+brew "python3"
+brew "tmux"
+brew "neovim"
+brew "tldr"
+brew "jq"
+brew "cmake"
+brew "ffmpeg"
+brew "wget"
+brew "rust"
+brew "oh-my-posh"
+
+# C++
+brew "boost"
+brew "eigen"
+brew "xtensor"
+brew "gcc"
+
+# Apps
+cask --force "google-chrome" 
+cask --force "spotify" 
+cask --force "visual-studio-code"
+cask --force "iterm2" 
+cask --force "teamviewer" 

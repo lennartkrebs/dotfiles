@@ -6,19 +6,43 @@
 - clean: ['~']
 
 - link:
-    ~/.zshrc: system/zshrc
-        force : true
+    ~/Brewfile : Brewfile
 
-    ~/.gitconfig : 
-        path : git/gitconfig
-        force : true
+    ~/.gitconfig : git/gitconfig
+    ~/.gitignore : git/gitignore
 
-    ~/.gitignore : 
-        path : git/gitignore
-        force : true
+    ~/:
+      glob : true
+      path : zsh/*
+      prefix : '.'
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
 
-# TODO: Git ignore and git config linking
-# Script execution, maybe full install scripts
+  - 
+      description : Installing homebrew
+      command : >-
+        if test ! $(which brew) ; then
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
+        fi
+  -
+      description : Installing brew packages
+      command : >-
+        brew update;
+        brew upgrade;
+        brew bundle install;
+  
+  -
+      description : Setting OSX default preferences
+      command : >-
+        zsh scripts/osx-defaults.zsh
+  -
+      description : Installing different font packages
+      command : >-
+        zsh scripts/fonts.zsh
+  -
+      description : Setting up dock
+      command : >-
+        zsh scripts/dock.zsh
+
+
