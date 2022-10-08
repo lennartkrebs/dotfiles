@@ -19,8 +19,9 @@ brew "xtensor"
 brew "gcc"
 
 # Apps
-cask --force "google-chrome" 
-cask --force "spotify" 
-cask --force "visual-studio-code"
-cask --force "iterm2" 
-cask --force "teamviewer" 
+cask_args force: true
+cask "google-chrome"
+cask "spotify"
+cask "visual-studio-code"
+cask "iterm2"
+cask "teamviewer"

@@ -6,11 +6,14 @@
 - clean: ['~']
 
 - link:
+    # Homebrew
     ~/Brewfile : Brewfile
 
+    # Git
     ~/.gitconfig : git/gitconfig
     ~/.gitignore : git/gitignore
 
+    # Dotfiles
     ~/:
       glob : true
       path : zsh/*
@@ -20,24 +23,24 @@
   - [git submodule update --init --recursive, Installing submodules]
 
   - 
-      description : Installing homebrew
+      description : Installing Homebrew
       command : >-
         if test ! $(which brew) ; then
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
         fi
   -
-      description : Installing brew packages
+      description : Installing Homebrew packages
       command : >-
         brew update;
         brew upgrade;
-        brew bundle install;
+        brew bundle install --no-lock;
   
   -
       description : Setting OSX default preferences
       command : >-
         zsh scripts/osx-defaults.zsh
   -
-      description : Installing different font packages
+      description : Installing fonts
       command : >-
         zsh scripts/fonts.zsh
   -
