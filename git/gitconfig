@@ -7,7 +7,6 @@
 	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
 	trustctime = false
 	autocrlf = input
-	pager = delta
 	editor = vim 
 
 [init]
@@ -47,7 +46,7 @@
 	default = simple
 
 [commit]
-	gpgsign = true
+	gpgsign = false
 
 [pull]
 	rebase = true
