@@ -25,7 +25,7 @@ alias emptytrash="sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl
 alias grep="grep --color=auto "
 alias week="date +%V"
 alias timer="echo 'Timer started. Stop with Ctrl-D.' && date && time cat && date"
-alias cwd="pwd | tr -d "\r\n" | pbcopy"
+alias cwd="pwd | tr -d '\n' | pbcopy"
 alias mergepdf="/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py" # Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
 alias zip="zip -x *.DS_Store -x *__MACOSX* -x *.AppleDouble*"
 alias dkshow="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
