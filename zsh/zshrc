@@ -1,7 +1,3 @@
-autoload -U colors
-autoload -U compinit
-autoload -U edit-command-line
-
 # Options, list all: $ man zshoptions
 setopt APPEND_HISTORY
 setopt CORRECT
@@ -9,12 +5,12 @@ setopt AUTO_LIST
 setopt NO_BEEP
 setopt COMPLETE_IN_WORD
 
-colors
-compinit
-
 # Oh-my-posh prompt
 # https://github.com/JanDeDobbeleer/oh-my-posh/tree/main/themes
-THEME_NAME="kali"
+# Some of my favorites: 
+# 'peru', 'paradox', 'patriksvensson', 'powerlevel10k_classic',
+# 'powerline', 
+THEME_NAME="probua.minimal"
 eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/$THEME_NAME.omp.json)"
 
 # Source scripts
