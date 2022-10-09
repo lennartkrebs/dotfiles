@@ -52,3 +52,7 @@ alias tree="tree -A"
 alias treed="tree -d"
 alias tree1="tree -d -L 1"
 alias tree2="tree -d -L 2"
+
+# Programs
+alias python="/opt/homebrew/bin/python3"
+alias pip="/opt/homebrew/bin/pip3"
