@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+# Ask for admin pw to install homebrew
+sudo -v 
+
 # Check for homebrew
 if ! which -s brew > /dev/null
 then

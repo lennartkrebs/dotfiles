@@ -2,9 +2,6 @@
     link:
       relink: true
       create : true
-      stdin : true
-      stdout : true
-      stderr : true
 
 - clean: ['~']
 
@@ -27,19 +24,26 @@
 
   - 
       description : Installing Homebrew and Brewfile
+      stdin : true
+      stdout : true
       command : >-
-        chmod +x scripts/brew-install.zsh;
         zsh scripts/brew-install.zsh
   -
       description : Setting OSX default preferences
+      stdin : true
+      stdout : true
       command : >-
         zsh scripts/osx-defaults.zsh
   -
       description : Installing fonts
+      stdin : true
+      stdout : true
       command : >-
         zsh scripts/fonts.zsh
   -
       description : Setting up dock
+      stdin : true
+      stdout : true
       command : >-
         zsh scripts/dock.zsh
 
