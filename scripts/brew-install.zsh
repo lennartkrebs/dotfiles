@@ -1,8 +1,10 @@
 #!/bin/zsh
 
 # Check for homebrew
-if test -n "$(which brew)" ; then
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
+if ! which -s brew > /dev/null
+then
+    echo "Homebrew is not installed. Installing.."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
 fi
 
 # Update, upgrade and install Brewfile
