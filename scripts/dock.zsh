@@ -13,6 +13,8 @@ apps=(
     "Spotify.app"
     "Mail.app"
     "System Preferences.app"
+    "Microsoft Outlook.app"
+    "Slack.app"
 )
 
 echo "Setting up dock.."
