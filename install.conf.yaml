@@ -2,6 +2,9 @@
     link:
       relink: true
       create : true
+      stdin : true
+      stdout : true
+      stderr : true
 
 - clean: ['~']
 
@@ -25,7 +28,8 @@
   - 
       description : Installing Homebrew and Brewfile
       command : >-
-        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
+        chmod +x scripts/brew-install.zsh;
+        zsh scripts/brew-install.zsh
   -
       description : Setting OSX default preferences
       command : >-
