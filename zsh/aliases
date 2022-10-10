@@ -56,3 +56,4 @@ alias tree2="tree -d -L 2"
 # Programs
 alias python="/opt/homebrew/bin/python3"
 alias pip="/opt/homebrew/bin/pip3"
+alias gcc="/opt/homebrew/bin/g++-12"
