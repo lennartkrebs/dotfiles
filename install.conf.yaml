@@ -23,17 +23,9 @@
   - [git submodule update --init --recursive, Installing submodules]
 
   - 
-      description : Installing Homebrew
+      description : Installing Homebrew and Brewfile
       command : >-
-        if test -n "$(which brew)" ; then
-        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
-        fi
-  -
-      description : Installing Homebrew packages
-      command : >-
-        brew update;
-        brew upgrade;
-        brew bundle install --no-lock;
+        zsh scripts/brew-install.zsh
   
   -
       description : Setting OSX default preferences
