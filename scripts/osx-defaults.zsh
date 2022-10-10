@@ -169,4 +169,9 @@ defaults write com.google.Chrome.canary ExtensionInstallSources -array "https://
 # Disable the macOS Crash reporter (Crash dialog that normally appears after an application halts.)
 defaults write com.apple.CrashReporter DialogType none
 
+# Do not show recent applications in Dock
+defaults write com.apple.dock show-recents -bool false
+
+
+
 echo "Done"
