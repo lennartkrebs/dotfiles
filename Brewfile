@@ -24,4 +24,4 @@ cask "google-chrome"
 cask "spotify"
 cask "visual-studio-code"
 cask "iterm2"
-cask "teamviewer" > /dev/null
+cask "teamviewer"
