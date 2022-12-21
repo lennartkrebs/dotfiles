@@ -9,3 +9,6 @@ export MANPAGER="less -X"
 # CMake
 export CXX="/usr/bin/clang++"
 export CC="/usr/bin/clang"
+
+# Emscripten
+export EMSDK_QUIET=1

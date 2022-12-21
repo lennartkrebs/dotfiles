@@ -17,9 +17,13 @@ colors
 # Some of my favorites: 
 # 'peru', 'paradox', 'patriksvensson', 'powerlevel10k_classic',
 # 'powerline', 
-THEME_NAME="probua.minimal"
+THEME_NAME="powerlevel10k_classic"
 eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/$THEME_NAME.omp.json)"
 
 # Source scripts
 source $HOME/.aliases
 source $HOME/.exports
+
+if [[ -d $HOME/emsdk ]]; then
+    source $HOME/emsdk/emsdk_env.sh
+fi
